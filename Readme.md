@@ -12,10 +12,10 @@ This TypeScript file is the entry point for a Solana blockchain client applicati
 This program retrieves the current hour of the day from the clock account, extracts the user's balance, multiplies the balance by the current hour, and prints the estimated earnings. 
 
 ### NOTE:
-```
+
 As an update to the previous version, the frontend is now interacting with the smart contract with the help of our main.ts
 Remember that this is a test project, and I will be leaving out some of my details just so it is easy to recognize in a real project trial.
-```
+
 
 
 ## Setting up Environment
