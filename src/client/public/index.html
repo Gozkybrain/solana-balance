@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Balance</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main content container -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="./hello.gif" alt="" width="100%">
+                <!-- Heading for the page -->
+                <h1 class="text-center">Solana Balance</h1>
+                <p>Just a simple project to check balance and view wallet address of a devnet solana account.</p>
+                <!-- Button to trigger fetching the balance -->
+                <button id="getBalanceButton" class="btn btn-primary btn-block">Get Balance</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Airdrop Details -->
+    <div class="modal fade" id="airdropModal" tabindex="-1" role="dialog" aria-labelledby="airdropModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!-- Modal header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="airdropModalLabel">Airdrop Details</h5>
+                    <!-- Button to close the modal -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <!-- Div for displaying balance -->
+                    <div id="balanceContainer">
+                        <h5>Balance:</h5>
+                        <p id="balanceMessage"></p>
+                    </div>
+                    <!-- Div for displaying wallet address -->
+                    <div id="walletAddressContainer">
+                        <h5>Wallet Address:</h5>
+                        <p id="walletAddressMessage"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Include the Solana Web3.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@4.6.0/dist/web3.min.js"></script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include your JavaScript file after the Solana Web3.js library -->
+    <script src="app.js"></script>
+</body>
+
+</html>

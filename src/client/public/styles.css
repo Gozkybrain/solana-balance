@@ -1,0 +1,58 @@
+ /* Set body background color to light gray */
+ body {
+     background-color: #dedede;
+ }
+
+ .container {
+     background-color: #fff;
+     padding: 15px 25px;
+     border-radius: 10px;
+ }
+
+ /* Center content horizontally and vertically */
+ html,
+ body {
+     height: 100%;
+ }
+
+ body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ /* Style for modal content */
+ .modal-content {
+     background-color: white;
+     padding: 20px;
+     border-radius: 10px;
+ }
+
+
+ /* Style for modal header */
+ .modal-header {
+     border-bottom: none;
+     padding-bottom: 0;
+ }
+
+ /* Style for modal title */
+ .modal-title {
+     font-size: 1.5rem;
+ }
+
+ /* Style for close button */
+ .close {
+     color: black;
+     font-size: 1.5rem;
+ }
+
+ /* Style for balance and wallet address containers */
+ #balanceContainer,
+ #walletAddressContainer {
+     margin-bottom: 20px;
+ }
+
+ /* Style for balance and wallet address headings */
+ h5 {
+     margin-bottom: 5px;
+ }
